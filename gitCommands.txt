@@ -1,0 +1,29 @@
+| Command                                              | Usage                              | Example                                                  |
+| ---------------------------------------------------- | ---------------------------------- | -------------------------------------------------------- |
+| `git --version`                                      | Check installed Git version        | `git --version`                                          |
+| `git config --global user.name "Your Name"`          | Set global username                | `git config --global user.name "Sandeep"`                |
+| `git config --global user.email "email@example.com"` | Set global email                   | `git config --global user.email "sandeep@example.com"`   |
+| `git config --list`                                  | Check current configuration        | `git config --list`                                      |
+| `git init`                                           | Initialize new Git repo locally    | `git init`                                               |
+| `git clone <repo-url>`                               | Clone remote repo to local machine | `git clone https://github.com/user/repo.git`             |
+| `git status`                                         | Check staged/unstaged changes      | `git status`                                             |
+| `git log`                                            | Show commit history                | `git log`                                                |
+| `git log --oneline`                                  | Short commit history               | `git log --oneline`                                      |
+| `git add <file>`                                     | Stage specific file                | `git add calculator.js`                                  |
+| `git add .`                                          | Stage all changes                  | `git add .`                                              |
+| `git commit -m "message"`                            | Commit staged changes              | `git commit -m "feat: initial commit"`                   |
+| `git branch`                                         | List branches                      | `git branch`                                             |
+| `git branch <branch-name>`                           | Create new branch                  | `git branch feature-input-validation`                    |
+| `git checkout <branch-name>`                         | Switch branch                      | `git checkout feature-input-validation`                  |
+| `git checkout -b <branch-name>`                      | Create + switch branch             | `git checkout -b feature-color-output`                   |
+| `git remote add origin <repo-url>`                   | Link local repo to remote          | `git remote add origin https://github.com/user/repo.git` |
+| `git remote -v`                                      | Check remote URL                   | `git remote -v`                                          |
+| `git push -u origin main`                            | Push changes first time            | `git push -u origin main`                                |
+| `git push`                                           | Push subsequent commits            | `git push`                                               |
+| `git pull`                                           | Pull latest changes from remote    | `git pull`                                               |
+| `git tag <tag-name>`                                 | Tag current commit                 | `git tag v1.0.0`                                         |
+| `git push origin <tag-name>`                         | Push tag to remote                 | `git push origin v1.0.0`                                 |
+| `git push --tags`                                    | Push all tags                      | `git push --tags`                                        |
+| `git restore <file>`                                 | Undo changes in file (unstaged)    | `git restore calculator.js`                              |
+| `git restore --staged <file>`                        | Unstage a staged file              | `git restore --staged calculator.js`                     |
+| `git reset --hard <commit>`                          | Rollback to previous commit        | `git reset --hard 1a2b3c4d`                              |
